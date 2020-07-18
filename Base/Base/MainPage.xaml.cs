@@ -16,6 +16,24 @@ namespace Base
         public MainPage()
         {
             InitializeComponent();
+            btnIngresar.Clicked += BtnIngresar_Clicked;
+        }
+
+        private void BtnIngresar_Clicked(object sender, EventArgs e)
+        {
+            if ((txt_email.Text == "admin") && (txt_pass.Text == "123"))
+            {
+                ((NavigationPage)this.Parent).PushAsync(new Home(txt_email.Text));
+            }
+            else
+            {
+                MostrarAlertaButtonClicked(sender, e);
+            }
+        }
+
+        async void MostrarAlertaButtonClicked(object sender, EventArgs e)
+        {
+            await DisplayAlert("Alerta", "Credenciales incorrectas", "Aceptar");
         }
     }
 }
