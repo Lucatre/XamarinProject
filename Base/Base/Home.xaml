@@ -7,14 +7,10 @@
              x:Class="Base.Home">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Hola Usuario"
-                
-                HorizontalOptions="CenterAndExpand" 
-                   TextColor="White"/>
-            <Label Text="¡Bienvenido a mi kölbi!"
-                
-                HorizontalOptions="CenterAndExpand" 
-                   TextColor="White"/>
+            
+            <Label Text="" x:Name="lbl01" HorizontalOptions="CenterAndExpand" TextColor="Black" FontFamily="verdana" FontSize="18" Margin="0,15,0,0"/>
+            <Label Text="¡Bienvenido a mi kölbi!" HorizontalOptions="CenterAndExpand" TextColor="Black" FontFamily="verdana" FontSize="16"/>
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
