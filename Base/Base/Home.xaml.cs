@@ -12,9 +12,10 @@ namespace Base
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Home : ContentPage
     {
-        public Home()
+        public Home(string nombre)
         {
             InitializeComponent();
+            lbl01.Text = "Hola " + nombre + ", Bienvenido!";
         }
     }
 }
