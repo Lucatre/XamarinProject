@@ -29,18 +29,18 @@
             </Grid.RowDefinitions>
 
             <Image Grid.Row="0" Source="kolbilogo2.png" x:Name="Img2" 
-                   HeightRequest="100" Margin="0,50,0,30"/>
+                   HeightRequest="100" Margin="0,50,0,50"/>
 
             <StackLayout Grid.Row="1" Padding="10,20">
-                <Entry Placeholder="Correo Electronico" PlaceholderColor="#a02383"/>
-                <Entry Placeholder="Contraseña" PlaceholderColor="#a02383" IsPassword="True"/>
-                <Button Text="Ingresar" BackgroundColor="#7ea612" TextColor="White" BorderRadius="20" BorderColor="White"/>
+                <Entry x:Name="txt_email" Placeholder="Correo Electronico" PlaceholderColor="#a02383"/>
+                <Entry x:Name="txt_pass" Placeholder="Contraseña" PlaceholderColor="#a02383" IsPassword="True"/>
+                <Button x:Name="btnIngresar" Text="Ingresar" BackgroundColor="#7ea612" TextColor="White" BorderRadius="20" BorderColor="White" Margin="0,20,0,20"/>
 
-                <StackLayout Orientation="Vertical">
-                    <Label Text="¿Olvidaste tu contraseña?" TextColor="#a9a9a9"/>
-                    <Label Text="¿Sos nuevo? Regístrate aquí" TextColor="#a9a9a9" 
-                           FontAttributes="Bold"/>
+                <StackLayout Orientation="Horizontal" Margin="70,10,0,0">
+                    <Label Text="¿Olvidaste tu contraseña?" TextColor="#ffffff" FontFamily="Franklin Gothic Book" FontSize="14"/>
+                    <Label Text="¿Sos nuevo? Regístrate aquí" TextColor="#ffffff" FontFamily="Franklin Gothic Book" FontSize="14" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center"/>
                 </StackLayout>
+                
             </StackLayout>
         </Grid>
 
