@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Base.MainPage">
+
+    <!--<StackLayout>
+        --><!-- Place new controls here --><!--
+        <Label Text="Hecho con C#" 
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" />
+    </StackLayout>-->
+    <Grid BackgroundColor="White">
+        <!--<Image Source="Kolbilogin.jpg" x:Name="Img1" Aspect="Fill" />-->
+        <!--<BoxView Color="#87d241" Opacity="1"/>-->
+        <!--<Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>-->
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <Image Grid.Row="0" Source="kolbilogo2.png" x:Name="Img2" 
+                   HeightRequest="100" Margin="0,50,0,50"/>
+
+            <StackLayout Grid.Row="1" Padding="10,20">
+                <Entry x:Name="txt_email" Placeholder="Correo Electronico" PlaceholderColor="#a02383"/>
+                <Entry x:Name="txt_pass" Placeholder="Contraseña" PlaceholderColor="#a02383" IsPassword="True"/>
+                <Button x:Name="btnIngresar" Text="Ingresar" BackgroundColor="#7ea612" TextColor="White" BorderRadius="20" BorderColor="White" Margin="0,20,0,20"/>
+
+                <StackLayout Orientation="Horizontal" Margin="70,10,0,0">
+                    <Label Text="¿Olvidaste tu contraseña?" TextColor="#ffffff" FontFamily="Franklin Gothic Book" FontSize="14"/>
+                    <Label Text="¿Sos nuevo? Regístrate aquí" TextColor="#ffffff" FontFamily="Franklin Gothic Book" FontSize="14" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center"/>
+                </StackLayout>
+                
+            </StackLayout>
+        </Grid>
+
+    </Grid>
+
+</ContentPage>
