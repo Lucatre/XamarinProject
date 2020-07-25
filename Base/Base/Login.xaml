@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Base.Login">
+    <ContentPage.Content>
+        <Grid BackgroundColor="White">
+            <!--<Image Source="Kolbilogin.jpg" x:Name="Img1" Aspect="Fill" />-->
+            <!--<BoxView Color="#87d241" Opacity="1"/>-->
+            <!--<Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>-->
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <Image Grid.Row="0" Source="kolbilogo2.png" x:Name="Img2" 
+                   HeightRequest="100" Margin="0,50,0,30"/>
+
+                <StackLayout Grid.Row="1" Padding="10,20">
+                    <Entry Placeholder="Correo Electronico" PlaceholderColor="#a02383" x:Name="txtEmail"/>
+                    <Entry Placeholder="Contraseña" PlaceholderColor="#a02383" IsPassword="True" x:Name="txtPassword"/>
+                    <Button Text="Ingresar" 
+                        BackgroundColor="#7ea612" 
+                        TextColor="White" 
+                        BorderRadius="20" 
+                        BorderColor="White"
+                        x:Name="btnIngresar"
+                        Clicked="btnIngresar_Clicked"/>
+
+                    <StackLayout Orientation="Vertical">
+                        <Label Text="¿Olvidaste tu contraseña?" TextColor="#a9a9a9"/>
+                     
+                        <Button BackgroundColor="White" 
+                                Text="¿Sos nuevo? Regístrate aquí"
+                                HorizontalOptions="Start"
+                                TextColor="#a9a9a9"
+                                FontAttributes="Bold"
+                                FontSize="Small"
+                                x:Name="btnRegistrarse"
+                                Clicked="btnRegistrarse_Clicked"/>
+                    </StackLayout>
+                </StackLayout>
+            </Grid>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

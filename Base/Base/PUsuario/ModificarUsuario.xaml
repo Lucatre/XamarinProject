@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Base.ModificarUsuario"
+             Title="Modificar Usuario">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid BackgroundColor="White">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+
+                </Grid.RowDefinitions>
+
+                <Image Grid.Row="0" 
+                   Source="kolbilogo3.png"
+                   HeightRequest="50" 
+                   Margin="0,20,0,10"/>
+
+                <StackLayout Grid.Row="1" Padding="10,20" Spacing="20">
+
+
+                    <Grid  Padding="0,15,0,15">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Text="Datos de Acceso"
+                           FontSize="Title"
+                           Grid.Row="0"
+                           TextColor="#00827b"
+                           Grid.ColumnSpan="2"/>
+
+                        <Label Text="Email:"
+                           Grid.Row="1"
+                           Grid.Column="0"
+                           FontSize="Medium"
+                           VerticalOptions="Center"/>
+                        <Entry 
+                           x:Name="txtEmail"
+                           Grid.Row="1"
+                           Grid.Column="1"
+                            IsReadOnly="True"/>
+
+                        <Label Text="Password:"
+                           Grid.Row="2"
+                           Grid.Column="0"
+                           FontSize="Medium"
+                           VerticalOptions="Center"/>
+                        <Entry 
+                           x:Name="txtPassword"
+                           Grid.Row="2"
+                           Grid.Column="1"
+                           IsPassword="True"/>
+
+                        <Label Text="Confirmar Password:"
+                           Grid.Row="3"
+                           Grid.Column="0"
+                           FontSize="Medium"
+                           VerticalOptions="Center"/>
+                        <Entry 
+                           x:Name="txtCPassword"
+                           Grid.Row="3"
+                           Grid.Column="1"
+                           IsPassword="True"/>
+
+                        <Label Text="Activo:"
+                           Grid.Row="4"
+                           Grid.Column="0"
+                           FontSize="Medium"
+                           VerticalOptions="Center"/>
+                        <Switch Grid.Row="4"
+                                Grid.Column="1"
+                                HorizontalOptions="Start"
+                                x:Name="sActivo"/>
+
+                        <Label Text="Tipo:"
+                           Grid.Row="5"
+                           Grid.Column="0"
+                           FontSize="Medium"
+                           VerticalOptions="Center"/>
+                        <Picker x:Name="pTipoUsuario"
+                                Grid.Row="5"
+                                Grid.Column="1"/>
+
+
+                        <Label Text="Datos Personales"
+                           FontSize="Title"
+                           Grid.Row="6"
+                           TextColor="#00827b"
+                           Grid.ColumnSpan="2" 
+                           />
+
+                        <Label Text="Nombre:"
+                           Grid.Row="7"
+                           Grid.Column="0"
+                           FontSize="Medium"
+                           VerticalOptions="Center"/>
+                        <Entry 
+                           x:Name="txtNombre"
+                           Grid.Row="7"
+                           Grid.Column="1"/>
+
+                        <Label Text="Primer Apellido:"
+                           Grid.Row="8"
+                           Grid.Column="0"
+                           FontSize="Medium"
+                           VerticalOptions="Center"/>
+                        <Entry 
+                           x:Name="txtPApellido"
+                           Grid.Row="8"
+                           Grid.Column="1"/>
+
+                        <Label Text="Segundo Apellido:"
+                           Grid.Row="9"
+                           Grid.Column="0"
+                           FontSize="Medium"
+                           VerticalOptions="Center"/>
+                        <Entry 
+                           x:Name="txtSApellido"
+                           Grid.Row="9"
+                           Grid.Column="1"/>
+
+                        <Label Text="Celular:"
+                           Grid.Row="10"
+                           Grid.Column="0"
+                           FontSize="Medium"
+                           VerticalOptions="Center"/>
+                        <Entry 
+                           x:Name="txtCelular"
+                           Grid.Row="10"
+                           Grid.Column="1"/>
+
+                        
+
+                    </Grid>
+
+
+
+                    <StackLayout Orientation="Horizontal">
+                        <Button Text="Actualizar" 
+                        BackgroundColor="#7ea612" 
+                        TextColor="White" 
+                        BorderRadius="20" 
+                        BorderColor="White"
+                        HorizontalOptions="FillAndExpand"
+                        HeightRequest="60"
+                        x:Name="btnModificar"
+                                Clicked="btnModificar_Clicked"
+                        />
+
+                        <Button Text="Eliminar" 
+                        BackgroundColor="Red" 
+                        TextColor="White" 
+                        BorderRadius="20" 
+                        BorderColor="White"
+                        HorizontalOptions="FillAndExpand"
+                        x:Name="btnEliminar"
+                        Clicked="btnEliminar_Clicked"
+                            
+                        />
+
+                    </StackLayout>
+
+
+                </StackLayout>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Base.PMenu.MenuCliente">
+    <ContentPage.Content>
+
+        <Grid BackgroundColor="White">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+
+            </Grid.RowDefinitions>
+
+            <Image Grid.Row="0" 
+                   Source="kolbilogo2.png"
+                   HeightRequest="100" 
+                   Margin="0,50,0,60"/>
+
+            <StackLayout Grid.Row="1" Padding="10,20" Spacing="20">
+
+                <Label Text="Bienvenido@ "
+                       HorizontalOptions="Center"
+                       TextColor="Red"
+                       x:Name="txtNombreUsuario"/>
+
+                <Button Text="Reportar Incidencia" 
+                        BackgroundColor="#7ea612" 
+                        TextColor="White" 
+                        BorderRadius="20" 
+                        BorderColor="White"
+                        x:Name="btnCrearIncidencia"
+                        Clicked="btnCrearIncidencia_Clicked"/>
+
+                <Button Text="Ver mis Incidencias" 
+                        BackgroundColor="#7ea612" 
+                        TextColor="White" 
+                        BorderRadius="20" 
+                        BorderColor="White"
+                        x:Name="btnVerIncidencias"
+                        Clicked="btnVerIncidencias_Clicked"/>
+
+
+                <Button Text="Modificar mi Perfil" 
+                        x:Name="btnModificarPerfil"
+                        Clicked="btnModificarPerfil_Clicked"
+                        BackgroundColor="#7ea612" 
+                        TextColor="White" 
+                        BorderRadius="20" 
+                        BorderColor="White"/>
+
+                <Button Text="Salir" 
+                        x:Name="btnSalir"
+                        Clicked="btnSalir_Clicked"
+                        BackgroundColor="#00827b" 
+                        TextColor="White" 
+                        BorderRadius="20" 
+                        BorderColor="White"/>
+
+
+            </StackLayout>
+        </Grid>
+
+    </ContentPage.Content>
+</ContentPage>

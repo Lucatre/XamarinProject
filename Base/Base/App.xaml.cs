@@ -6,11 +6,11 @@ namespace Base
 {
     public partial class App : Application
     {
-        public App()
+        public App(string filename)
         {
             InitializeComponent();
-
-            MainPage = new MainPage();
+            DataAccess.Inicializador(filename);
+            MainPage = new NavigationPage(new Login());
         }
 
         protected override void OnStart()

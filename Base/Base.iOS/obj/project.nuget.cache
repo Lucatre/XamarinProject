@@ -1,12 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "bpcvNEyrSXyIgVnDfODRIQcJuq5xEEl3ytar3Pn9X5D7I1WKfhvhQFaV4scEhAi5IC5Mi/2gRkDb0bYcgUvM5w==",
+  "dgSpecHash": "Z0A5UCne3pDExQaLJLp16qihiv4gNG9p1PXtw85VOs9vhmQmNyia1wCXC/1HFQxwwYMsVHPmnRO2+Sv36Gaxbg==",
   "success": true,
-  "projectFilePath": "D:\\Universidades\\ULACIT\\2020-2\\C#\\Proyecto\\Base\\Base\\Base.iOS\\Base.iOS.csproj",
+  "projectFilePath": "C:\\Users\\Josue\\Desktop\\XamarinProject\\Base\\Base.iOS\\Base.iOS.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\ram56\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
-    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.3.1\\xamarin.essentials.1.3.1.nupkg.sha512",
-    "C:\\Users\\ram56\\.nuget\\packages\\xamarin.forms\\4.4.0.991265\\xamarin.forms.4.4.0.991265.nupkg.sha512"
+    "C:\\Users\\Josue\\.nuget\\packages\\sqlite-net-pcl\\1.7.335\\sqlite-net-pcl.1.7.335.nupkg.sha512",
+    "C:\\Users\\Josue\\.nuget\\packages\\sqlitepclraw.bundle_green\\2.0.3\\sqlitepclraw.bundle_green.2.0.3.nupkg.sha512",
+    "C:\\Users\\Josue\\.nuget\\packages\\sqlitepclraw.core\\2.0.3\\sqlitepclraw.core.2.0.3.nupkg.sha512",
+    "C:\\Users\\Josue\\.nuget\\packages\\sqlitepclraw.provider.dynamic_cdecl\\2.0.3\\sqlitepclraw.provider.dynamic_cdecl.2.0.3.nupkg.sha512",
+    "C:\\Users\\Josue\\.nuget\\packages\\system.buffers\\4.4.0\\system.buffers.4.4.0.nupkg.sha512",
+    "C:\\Users\\Josue\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
+    "C:\\Users\\Josue\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
+    "C:\\Users\\Josue\\.nuget\\packages\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
+    "C:\\Users\\Josue\\.nuget\\packages\\xamarin.forms\\4.7.0.1179\\xamarin.forms.4.7.0.1179.nupkg.sha512"
   ],
   "logs": []
 }

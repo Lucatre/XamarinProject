@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Base.PIncidencia.ListaIncidencias"
+             Title="Incidencias">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid BackgroundColor="White">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+
+                </Grid.RowDefinitions>
+
+                <Image Grid.Row="0" 
+                   Source="kolbilogo3.png"
+                   HeightRequest="50" 
+                   Margin="0,20,0,10"/>
+
+                <StackLayout Grid.Row="1" Padding="10,20" Spacing="20">
+
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Lista de Incidencias"
+                           TextColor="#00827b"
+                           FontSize="Title"
+                               VerticalOptions="Center"/>
+                        <Button
+                            ImageSource="actualizar.png"
+                            x:Name="btnactualizar"
+                            BackgroundColor="white"
+                            Clicked="btnactualizar_Clicked"
+                            />
+
+
+                    </StackLayout>
+
+                    <ListView x:Name="lstIncidencias" HasUnevenRows="True" ItemSelected="lstIncidencias_ItemSelected" >
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <Grid Padding="10">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="*"/>
+                                            <RowDefinition Height="Auto"/>
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="Auto"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Label Grid.Row="0" Grid.Column="0" Text="{Binding TipoIncidencia}" FontAttributes="Bold" FontSize="Medium"/>
+                                        <Label Grid.Row="0" Grid.Column="1" Text="ID=" FontAttributes="Bold" FontSize="Medium"/>
+                                        <Label Grid.Row="0" Grid.Column="1" Text="{Binding IncidenciaID}" FontAttributes="Bold" FontSize="Medium" HorizontalOptions="Center"/>
+                                        <Label Grid.Row="1" Grid.Column="0" Text="{Binding Ubicacion} " FontAttributes="Bold" />
+                                        <Label Grid.Row="1" Grid.Column="1" Text ="{Binding FechaCreacion} " HorizontalOptions="End"/>
+                                        <Label Grid.Row="2" Grid.Column="0" Text ="Estado:  " FontAttributes="Bold"/>
+                                        <Label Grid.Row="2" Grid.Column="0" Text ="{Binding Estado}" HorizontalOptions="Center" />
+                                        <Label Grid.Row="2" Grid.Column="1" Text ="{Binding Tecnico} " HorizontalOptions="Center" />
+                                    </Grid>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+
+
+
+
+                </StackLayout>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

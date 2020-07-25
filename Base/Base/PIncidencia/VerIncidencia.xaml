@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Base.PIncidencia.VerIncidencia"
+             Title="Ver Incidencia">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid BackgroundColor="White">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+
+                </Grid.RowDefinitions>
+
+                <Image Grid.Row="0" 
+                   Source="kolbilogo3.png"
+                   HeightRequest="50" 
+                   Margin="0,20,0,10"/>
+
+                <StackLayout Grid.Row="1" Padding="10,20" Spacing="20">
+
+
+                    <Grid  Padding="0,15,0,15">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Text="Datos de Incidencia"
+                           FontSize="Title"
+                           Grid.Row="0"
+                           TextColor="#00827b"
+                           Grid.ColumnSpan="2"/>
+
+                        <Label Text="ID:"
+                           Grid.Row="1"
+                           Grid.Column="0"
+                           FontSize="Medium"
+                           VerticalOptions="Center"/>
+                        <Entry 
+                           x:Name="txtIncidenciaID"
+                           Grid.Row="1"
+                           Grid.Column="1"
+                            IsReadOnly="True"/>
+
+                        <Label Text="Descripción:"
+                           Grid.Row="2"
+                           Grid.ColumnSpan="2"
+                           FontSize="Medium"
+                           VerticalOptions="Center"/>
+                        <Editor
+                            Grid.Row="3"
+                            Grid.RowSpan="2"
+                            Grid.ColumnSpan="2"
+                            x:Name="txtDescripcion"
+                            IsReadOnly="True"/>
+
+                        <Label Text="Tipo Incidencia:"
+                           Grid.Row="5"
+                           Grid.Column="0"
+                           FontSize="Medium"
+                           VerticalOptions="Center"/>
+                        <Entry 
+                           x:Name="txtTipoIncidencia"
+                           Grid.Row="5"
+                           Grid.Column="1"
+                            IsReadOnly="True"/>
+
+                        <Label Text="Estado:"
+                           Grid.Row="6"
+                           Grid.Column="0"
+                           FontSize="Medium"
+                           VerticalOptions="Center"/>
+                        <Entry 
+                           x:Name="txtEstado"
+                           Grid.Row="6"
+                           Grid.Column="1"
+                            IsReadOnly="True"/>
+
+
+                        <Label Text="Fecha Creación:"
+                           Grid.Row="7"
+                           Grid.Column="0"
+                           FontSize="Medium"
+                           VerticalOptions="Center"/>
+                        <Entry 
+                           x:Name="txtCreacion"
+                           Grid.Row="7"
+                           Grid.Column="1"
+                            IsReadOnly="True"
+                         />
+
+                        <Label Text="Fecha Finalización:"
+                           Grid.Row="8"
+                           Grid.Column="0"
+                           FontSize="Medium"
+                           VerticalOptions="Center"/>
+                        <Entry 
+                           x:Name="txtFinalizacion"
+                           Grid.Row="8"
+                           Grid.Column="1"
+                            IsReadOnly="True"
+                         />
+
+                        <Label Text="Datos de Ubicacion"
+                           FontSize="Title"
+                           Grid.Row="9"
+                           TextColor="#00827b"
+                           Grid.ColumnSpan="2"/>
+
+                        <Label Text="Usuario:"
+                           Grid.Row="10"
+                           Grid.Column="0"
+                           FontSize="Medium"
+                           VerticalOptions="Center"/>
+                        <Entry 
+                           x:Name="txtUsuario"
+                           Grid.Row="10"
+                           Grid.Column="1"
+                            IsReadOnly="True"
+                         />
+
+                        <Label Text="Ubicación:"
+                           Grid.Row="11"
+                           Grid.Column="0"
+                           FontSize="Medium"
+                           VerticalOptions="Center"
+                               />
+                        <Entry 
+                           x:Name="txtUbicacion"
+                           Grid.Row="11"
+                           Grid.Column="1"
+                   IsReadOnly="True"
+                         />
+
+                        <Label Text="Contacto:"
+                           Grid.Row="12"
+                           Grid.Column="0"
+                           FontSize="Medium"
+                           VerticalOptions="Center"/>
+                        <Entry 
+                           x:Name="txtContacto"
+                           Grid.Row="12"
+                           Grid.Column="1"
+                   IsReadOnly="True"
+                         />
+
+
+
+                    </Grid>
+
+
+
+                    <StackLayout Orientation="Horizontal">
+                        <Button Text="Regresar" 
+                        BackgroundColor="#7ea612" 
+                        TextColor="White" 
+                        BorderRadius="20" 
+                        BorderColor="White"
+                        HorizontalOptions="FillAndExpand"
+                        HeightRequest="60"
+                        x:Name="btnRegresar"
+                                Clicked="btnRegresar_Clicked"
+                            
+                        />
+
+                        <!--<Button Text="Eliminar" 
+                        BackgroundColor="Red" 
+                        TextColor="White" 
+                        BorderRadius="20" 
+                        BorderColor="White"
+                        HorizontalOptions="FillAndExpand"
+                        x:Name="btnEliminar"
+                        Clicked="btnEliminar_Clicked"
+                            
+                        />-->
+
+                    </StackLayout>
+
+
+                </StackLayout>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
